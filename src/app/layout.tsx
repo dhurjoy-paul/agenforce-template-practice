@@ -1,6 +1,7 @@
 import ThemeProviderWrapper from "@/providers/theme-provider";
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Geist_Mono, Inter, Manrope } from "next/font/google";
+import Navbar from "../components/navbar";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -11,6 +12,12 @@ const manrope = Manrope({
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const geist_mono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -26,13 +33,16 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${manrope.variable} ${inter.variable} antialiased`}>
+      <body
+        className={`${manrope.variable} ${inter.variable} ${geist_mono.variable} antialiased`}
+      >
         <ThemeProviderWrapper
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           <main className="bg-background text-foreground">{children}</main>
         </ThemeProviderWrapper>
       </body>

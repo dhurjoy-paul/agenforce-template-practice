@@ -35,7 +35,7 @@ export default function ModeToggle() {
   return (
     <button
       onClick={SWITCH}
-      className="flex justify-center items-center size-4"
+      className="relative flex justify-center items-center size-4"
     >
       <SunIcon
         size={14}
