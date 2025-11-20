@@ -43,7 +43,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="bg-background text-foreground">{children}</main>
+          <main className="bg-background min-h-screen font-inter text-foreground">
+            {children}
+          </main>
         </ThemeProviderWrapper>
       </body>
     </html>

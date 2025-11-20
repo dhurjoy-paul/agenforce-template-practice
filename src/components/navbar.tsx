@@ -23,11 +23,14 @@ export default function Navbar() {
         </div>
 
         {/* auth buttons */}
-        <div className="flex justify-between items-center gap-6 font-sans font-medium text-sm">
-          <Link href="/login" className="">
-            Login
-          </Link>
-          <Button>Signup</Button>
+        <div className="flex justify-between items-center gap-4 font-sans font-medium text-sm">
+          {/* <Link href="/login">Login</Link> */}
+          <Button variant="outline" asChild>
+            <Link href="/login">Login</Link>
+          </Button>
+          <Button asChild>
+            <Link href="/signup">Signup</Link>
+          </Button>
         </div>
       </Container>
     </div>
