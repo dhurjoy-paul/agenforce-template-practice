@@ -28,7 +28,8 @@ export default function LandingImages() {
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.05, ease: "easeOut" }}
-        className="perspective-[3800px] -translate-y-35 translate-x-50"
+        className="perspective-[3800px] -translate-y-15 translate-x-50"
+        // className="perspective-[3800px] -translate-y-15 translate-x-50 md:-translate-y-25 lg:-translate-y-35"
       >
         <Image
           src="/image-1.png"
