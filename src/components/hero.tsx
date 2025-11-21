@@ -17,11 +17,12 @@ export default function Hero() {
           outcomes—without changing how your teams work.
         </SubHeading>
         <div className="flex items-center gap-3">
-          <Button className="shadow-brand">Start a 30-day trial</Button>
+          <Button className="z-49 shadow-brand">Start a 30-day trial</Button>
           <Button asChild variant="outline">
             <Link href="/demos">View role based demos</Link>
           </Button>
         </div>
+
         <LandingImages />
       </Container>
     </section>
