@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Container from "./shared/container";
 import Heading from "./shared/heading";
+import LandingImages from "./shared/landing-images";
 import SubHeading from "./shared/sub-heading";
 
 export default function Hero() {
@@ -21,6 +22,7 @@ export default function Hero() {
             <Link href="/demos">View role based demos</Link>
           </Button>
         </div>
+        <LandingImages />
       </Container>
     </section>
   );
